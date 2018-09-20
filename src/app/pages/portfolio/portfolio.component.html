@@ -2,7 +2,7 @@
     <app-loading *ngIf="!_productos.productosCargados"></app-loading>
 
     <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4" *ngIf="_productos.productosCargados">
-        <a *ngFor="let producto of _productos.productos" routerLink="/item" class="animated bounceIn rk-item ae-masonry__item">
+        <a *ngFor="let producto of _productos.productos" routerLink="/item/{{ producto.cod }}" class="animated bounceIn rk-item ae-masonry__item">
             <img src="assets/productos/{{ producto.url }}.jpg" alt="">
             <div class="item-meta">
                 <h2>{{ producto.titulo }}</h2>

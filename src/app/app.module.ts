@@ -12,6 +12,7 @@ import { ItemComponent } from './pages/item/item.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './shared/loading/loading.component';
+import { SearchComponent } from './pages/search/search.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { LoadingComponent } from './shared/loading/loading.component';
         PortfolioComponent,
         AboutComponent,
         ItemComponent,
-        LoadingComponent
+        LoadingComponent,
+        SearchComponent
     ],
     imports: [
         BrowserModule,
