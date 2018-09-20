@@ -11,6 +11,7 @@ import { ItemComponent } from './pages/item/item.component';
 // Modulos
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { LoadingComponent } from './shared/loading/loading.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
         FooterComponent,
         PortfolioComponent,
         AboutComponent,
-        ItemComponent
+        ItemComponent,
+        LoadingComponent
     ],
     imports: [
         BrowserModule,

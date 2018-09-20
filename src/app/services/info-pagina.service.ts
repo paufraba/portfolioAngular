@@ -34,7 +34,7 @@ export class InfoPaginaService {
 
         this.http.get('https://porfolio-df0ac.firebaseio.com/equipo.json')
             .subscribe((data: any[]) => {
-                console.log(data);
+                // console.log(data);
                 this.equipoCargado = true;
                 this.equipo = data;
             });
